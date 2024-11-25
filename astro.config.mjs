@@ -5,6 +5,8 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import vercelStatic from '@astrojs/vercel/static';
 import react from '@astrojs/react';
 import sitemap from "@astrojs/sitemap";
+import remarkMath from 'remark-math';
+import rehypeMathjax from 'rehype-mathjax';
 const options = {
   // Specify the theme to use or a custom theme json, in our case
   // it will be a moonlight-II theme from
@@ -30,12 +32,12 @@ const options = {
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://astro-tech-blog-ten.vercel.app/',
+	site: 'https://blog.darryl.one/',
 	markdown: {
 		syntaxHighlight: false,
 		// Disable syntax built-in syntax hightlighting from astro
-		rehypePlugins: [[rehypePrettyCode, options]],
-		remarkPlugins: [remarkReadingTime]
+		rehypePlugins: [[rehypePrettyCode, options], rehypeMathjax],
+		remarkPlugins: [remarkReadingTime, remarkMath]
 	},
 	integrations: [tailwind(), react(), sitemap()],
 	output: 'static',
