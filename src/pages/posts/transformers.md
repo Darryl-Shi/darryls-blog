@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/post.astro
 title: "Transformers"
-pubDate: 2024-11-26
+pubDate: 2024-11-25
 description: "Autoregressive modelling has been a cornerstone in time series analysis and natural language processing for decades. Traditionally, models like Recurrent Neural Networks (RNNs) and their variants such as Long Short-Term Memory (LSTM) networks have dominated the field. However, with the advent of Transformer models, the landscape of autoregressive modelling has been irrevocably altered. Transformers have revolutionized the way we handle sequential data, bringing unprecedented improvements in efficiency and performance."
 author: "darryl"
 excerpt: "Transformer Models for Autoregressive Modelling: A Comprehensive Exploration"

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/post.astro
 title: "ResNet"
-pubDate: 2024-11-26
+pubDate: 2024-11-25
 description: "In 2015, a seminal development addressed these challenges: the Residual Network, or ResNet. Introduced by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, ResNet revolutionized deep learning by enabling the training of neural networks with unprecedented depth—over 100 layers—while maintaining performance and stability."
 author: "darryl"
 excerpt: "Unleashing the Depths of Deep Learning: An In-Depth Exploration of Residual Networks (ResNet)"
