@@ -8,7 +8,7 @@ excerpt: "Transformer Models for Autoregressive Modelling: A Comprehensive Explo
 image:
   src:
   alt:
-tags: ["ml", "dl", "ai", "autoregressive"]
+tags: ["ml", "dl", "ai", "autoregressive", "transformers"]
 ---
 # Transformer Models for Autoregressive Modelling: A Comprehensive Exploration
 
