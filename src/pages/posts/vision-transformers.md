@@ -44,11 +44,11 @@ This approach significantly reduces the sequence length compared to considering 
 
 After splitting the image into patches and flattening them, each patch is mapped to a fixed-dimensional embedding vector through a linear projection. This is achieved using a trainable linear layer that projects the flattened patch vectors into the embedding space.
 
-Mathematically, for each flattened patch vector \( x_i \), the embedding \( z_i \) is calculated as:
+Mathematically, for each flattened patch vector $x_i$, the embedding $z_i$ is calculated as:
 
-\[ z_i = W x_i + b \]
+$z_i = W x_i + b$
 
-where \( W \) is the projection matrix and \( b \) is the bias vector. The result is a set of embeddings \( \{ z_1, z_2, ..., z_N \} \), where \( N \) is the number of patches.
+where $W$ is the projection matrix and $b$ is the bias vector. The result is a set of embeddings $\{ z_1, z_2, ..., z_N \}$, where $N$ is the number of patches.
 
 ### Positional Embeddings
 
@@ -56,9 +56,9 @@ Transformers are inherently permutation-invariant; they do not have a built-in n
 
 Similarly, in the Vision Transformer, positional embeddings are added to the patch embeddings to retain the spatial information of the image. These positional embeddings are learnable parameters that are added to the patch embeddings:
 
-\[ \tilde{z}_i = z_i + p_i \]
+$\tilde{z}_i = z_i + p_i$
 
-where \( p_i \) is the positional embedding corresponding to the \( i \)-th patch.
+where $p_i$ is the positional embedding corresponding to the $i$-th patch.
 
 ### The Classification Token (CLS Token)
 
@@ -72,17 +72,17 @@ The sequence of embeddings, including the positional embeddings and the CLS toke
 
 In each attention layer, the model computes attention scores between all pairs of embeddings, allowing each patch to attend to information from other patches. This mechanism enables the model to capture both local and global dependencies within the image.
 
-The attention mechanism involves computing queries \( Q \), keys \( K \), and values \( V \) for each embedding:
+The attention mechanism involves computing queries $Q$, keys $K$, and values $V$ for each embedding:
 
-\[ Q = XW_Q, \quad K = XW_K, \quad V = XW_V \]
+$Q = XW_Q, \quad K = XW_K, \quad V = XW_V$
 
-where \( W_Q \), \( W_K \), and \( W_V \) are learnable projection matrices, and \( X \) is the sequence of embeddings.
+where $W_Q$, $W_K$, and $W_V$ are learnable projection matrices, and $X$ is the sequence of embeddings.
 
 The attention scores are computed using the scaled dot-product attention:
 
-\[ \text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V \]
+$\text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V$
 
-where \( d_k \) is the dimensionality of the key vectors.
+where $d_k$ is the dimensionality of the key vectors.
 
 Multi-head attention allows the model to attend to information from different representation subspaces at different positions.
 
