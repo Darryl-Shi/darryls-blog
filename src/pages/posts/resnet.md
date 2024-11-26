@@ -6,7 +6,7 @@ description: "In 2015, a seminal development addressed these challenges: the Res
 author: "darryl"
 excerpt: "Unleashing the Depths of Deep Learning: An In-Depth Exploration of Residual Networks (ResNet)"
 image:
-  src:
+  src: "../../resnet.png"
   alt:
 tags: ["ml", "dl", "ai", "cnn", "vision"]
 ---
