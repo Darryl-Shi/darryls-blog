@@ -6,7 +6,7 @@ description: "Algorithms are the backbone of computer science and the key to sol
 author: "darryl"
 excerpt: "A Comprehensive Introduction to Algorithms: Understanding the Foundations of Problem-Solving in Computer Science"
 image:
-  src: "../../algorithm.jpg"
+  src:
   alt:
 tags: ["algorithms"]
 ---
