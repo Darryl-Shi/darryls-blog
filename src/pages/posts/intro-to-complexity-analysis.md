@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: "Introduction to Complexity Analysis"
 pubDate: 2024-12-09
-description: "This blog post explores the core concepts of complexity analysis, providing a beginner-friendly introduction to this essential field.
+description: "This blog post explores the core concepts of complexity analysis, providing a beginner-friendly introduction to this essential field."
 author: "darryl"
 excerpt: "This blog post explores the core concepts of complexity analysis, providing a beginner-friendly introduction to this essential field."
 image:
